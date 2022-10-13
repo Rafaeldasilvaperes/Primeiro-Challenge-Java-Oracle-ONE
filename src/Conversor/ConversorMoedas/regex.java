@@ -8,7 +8,7 @@ public class regex {
     public String regexPrice(String inputDaAPI) { 
       try {
       
-        String regex = "[\\d][.][\\d][\\d]";
+        String regex = "[\\d]+[.][\\d]+";
         Pattern padrao = Pattern.compile(regex);
         Matcher combinador = padrao.matcher(inputDaAPI);
         combinador.find();
@@ -20,7 +20,5 @@ public class regex {
         return e.toString();
       }
       
-      
     }
-    
 }

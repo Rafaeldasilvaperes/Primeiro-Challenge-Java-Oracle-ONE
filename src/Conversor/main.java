@@ -11,7 +11,6 @@ public class main {
 
 		regex regeX = new regex();
 		conversorMoedasAPI CM = new conversorMoedasAPI();
-		
 
 		while(true){
 			String options = JOptionPane.showInputDialog(
@@ -49,7 +48,6 @@ public class main {
 							} catch (Exception e) {
 								System.out.println(e);
 							}
-							
 							break;
 					
 						case "Reais para Dólares":
